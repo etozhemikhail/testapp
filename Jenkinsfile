@@ -17,7 +17,7 @@ pipeline {
         }
         stage ('checkout git') {
             steps {
-                git branch: 'main', url: '${params.repo}'
+                git branch: 'main', url: ${params.repo}
             }
         }
 
